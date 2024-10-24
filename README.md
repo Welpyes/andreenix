@@ -71,3 +71,22 @@ pkg install termux-x11-nightly pulseaudio proot-distro wget
 now thats finished lets move on to **Arch Setup**
 
 </details>
+
+## 
+
+### Arch Installation 
+
+**NOTE** Before you proceed make sure you have done the pre installation procedures up above
+
+First of all we have to enable mirrors based on your region to achieve fast download speeds
+```bash
+nano /etc/pacman.d/mirrorlist
+```
+After executing that command, disable the Geo-ip server by adding a comment (#) in front of `server` entry
+example: **DONT COPY THIS**
+```bash
+## Geo-IP based mirror selection and load balancing
+# Server = http://mirror.archlinuxarm.org/$arch/$repo`
+/\
+ L add this # 
+```
