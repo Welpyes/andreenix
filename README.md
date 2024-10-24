@@ -170,6 +170,6 @@ now to launch arch linux just use this command
 ```bash
 bash startxfce4_arch.sh
 ```
-
+If You're getting `"[Process completed (signal 9) - press Enter]"` Termux error see this reddit post [link](https://www.reddit.com/r/termux/comments/w0ixkp/comment/ighshu6/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button)
 
 </details>
