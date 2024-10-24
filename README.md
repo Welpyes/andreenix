@@ -17,7 +17,7 @@
 * **Storage**: `5gb minimum, 8gb recommended`
 # 
 <details>
-<summary><b>Termux-x11(Xserver) Preferences<b></summary>
+<summary><b>Termux-x11(Xserver) Preferences</b></summary>
 
 #### Output  
 - Display resolution mode  - Exact 
@@ -45,9 +45,11 @@ Toggle Keyboard using back key - On
 </details>
 
 <details>
-<summary><b>Termux Setup<b></summary>
-First off all use the command `termux-change-repo` to update repos and check for bad ones
-
+<summary><b>Termux Setup</b></summary>
+First off all use this to update repos and check for bad ones
+```
+termux-change-repo
+```
 <br><img width="200" align="left" src="https://github.com/Welpyes/Proot-distro-Arch-Linux/blob/a329f2be169ed71e6e812f926df9d911310c5c81/.Readme-Resources/termux-repos1.jpg">
 
 <br><img width="200" align="right" src="https://github.com/Welpyes/Proot-distro-Arch-Linux/blob/a329f2be169ed71e6e812f926df9d911310c5c81/.Readme-Resources/termux-repos2.jpg">
