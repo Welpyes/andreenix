@@ -46,12 +46,25 @@ Toggle Keyboard using back key - On
 
 <details>
 <summary><b>Termux Setup</b></summary>
-
+<br> 
 First off all use this to update repos and check for bad ones
 
 ```sh
-termux-change-repo
+termux-change-repo && pkg upgrade -y
 ```
 <img width="300" align="left" src="https://github.com/Welpyes/Proot-distro-Arch-Linux/blob/a329f2be169ed71e6e812f926df9d911310c5c81/.Readme-Resources/termux-repos1.jpg"><img width="300" align="right" src="https://github.com/Welpyes/Proot-distro-Arch-Linux/blob/a329f2be169ed71e6e812f926df9d911310c5c81/.Readme-Resources/termux-repos2.jpg">
+<br> 
+Installing additional repos
+
+```sh
+pkg install root-repo x11-repo tur-repo
+```
+<br>
+Install proot-distro and necessary packages
+
+```sh
+pkg install termux-x11-nightly pulseaudio proot-distro wget
+```
+now thats finished lets move on to **Arch Setup**
 
 </details>
