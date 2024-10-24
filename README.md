@@ -16,3 +16,30 @@
 * **Ram** : `3gb and above`
 * **Storage**: `5gb minimum, 8gb recommended`
 # 
+<details>
+<summary><b>Termux-x11(Xserver) Preferences<b></summary>
+
+#### Output  
+- Display resolution mode  - Exact 
+- Display resolution  - 1920x1080(minimum is 1280x720)
+- Stretch to fit display  - Off
+- Reseed screen while soft keyboard is open  - Off
+- PIP mode  - Off
+- Fullscreen on device display  - On
+- Force landscape orientation  - On
+- Hide display cutout (if any)  - Optional
+- Keep Screen On - On
+
+### Pointer
+Touchscreen input mode  - Trackpad  
+Show stylus click options  - Off
+Show mouse click helper overlay  - On
+Capture external mouse when possible  - On
+Transform captured pointer movements  - On  
+Enable tap-to-move for touchpads - Off
+
+### Keyboard
+Toggle Keyboard using back key - On
+**Everything else is optional**
+
+</details>
