@@ -86,15 +86,15 @@ After executing that command, disable the Geo-ip server by adding a comment (#) 
 example: **DONT COPY THIS**
 ```bash
 ## Geo-IP based mirror selection and load balancing
-# Server = http://mirror.archlinuxarm.org/$arch/$repo`
+   Server = http://mirror.archlinuxarm.org/$arch/$repo`
 /\
- L add this # 
+ L add # Here
 ```
 after that just remove the comment on the servers you want based on your region
 ```bash
 ### Japan
 ## Tokyo
- Server = http://jp.mirror.archlinuxarm.org/$arch/$repo
+ # Server = http://jp.mirror.archlinuxarm.org/$arch/$repo
  /\
   L remove the # here
  ```
