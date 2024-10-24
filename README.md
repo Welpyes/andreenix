@@ -52,8 +52,12 @@ First off all use this to update repos and check for bad ones
 ```sh
 termux-change-repo && pkg upgrade -y
 ```
-<img width="300" align="left" src="https://github.com/Welpyes/Proot-distro-Arch-Linux/blob/a329f2be169ed71e6e812f926df9d911310c5c81/.Readme-Resources/termux-repos1.jpg"><img width="300" align="right" src="https://github.com/Welpyes/Proot-distro-Arch-Linux/blob/a329f2be169ed71e6e812f926df9d911310c5c81/.Readme-Resources/termux-repos2.jpg">
+![termux-change-repo1](https://github.com/Welpyes/Proot-distro-Arch-Linux/blob/a329f2be169ed71e6e812f926df9d911310c5c81/.Readme-Resources/termux-repos1.jpg)
+![termux-change-repo2](https://github.com/Welpyes/Proot-distro-Arch-Linux/blob/a329f2be169ed71e6e812f926df9d911310c5c81/.Readme-Resources/termux-repos2.jpg)
+
+
 <br> 
+###
 Installing additional repos
 
 ```sh
