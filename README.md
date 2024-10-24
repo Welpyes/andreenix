@@ -78,6 +78,18 @@ now thats finished lets move on to **Arch Setup**
 
 **NOTE** Before you proceed make sure you have done the pre installation procedures up above
 
+Install Archlinux by using this command
+```bash
+pd i archlinux
+```
+then log in to arch by using
+```bash
+pd sh archlinux
+```
+
+<details>
+<summary><b>Mirror Setup</b></summary>
+
 First of all we have to enable mirrors based on your region to achieve fast download speeds
 ```bash
 nano /etc/pacman.d/mirrorlist
@@ -98,3 +110,35 @@ after that just remove the comment on the servers you want based on your region
  /\
   L remove the # here
  ```
+ then save the file by clicking `ctrl` then O<br>
+ and closing nano by `ctrl` then X
+ 
+</details>
+
+
+<details>
+<summary><b>Arch Linux Main Setup</b></summary>
+
+Do a full system upgrade
+```bash
+pacman -Syyyyyyyyyyu
+```
+install sudo and xfce4 
+```bash
+pacman -S sudo xfce4
+```
+add user (add your username)
+```bash
+useradd -m -G wheel Welpyes
+```
+Add a password to your user
+```bash
+passwd Welpyes
+```
+now scroll down and find `User Privilege Specification` one line under `root` add:
+```bash
+Welpyes ALL=(ALL) ALL
+```
+
+
+</details>
