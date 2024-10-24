@@ -127,7 +127,7 @@ install sudo and xfce4
 ```bash
 pacman -S sudo xfce4 --noconfirm
 ```
-add user (add your username)
+add user (add your username) **NOTE** dont forget that your username is case sensitive 
 ```bash
 useradd -m -G wheel Welpyes
 ```
