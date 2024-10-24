@@ -43,3 +43,13 @@ Toggle Keyboard using back key - On
 **Everything else is optional**
 
 </details>
+
+<details>
+<summary><b>Termux Setup<b></summary>
+First off all use the command `termux-change-repo` to update repos and check for bad ones
+
+<br><img width="200" align="left" src="https://github.com/Welpyes/Proot-distro-Arch-Linux/blob/a329f2be169ed71e6e812f926df9d911310c5c81/.Readme-Resources/termux-repos1.jpg">
+
+<br><img width="200" align="right" src="https://github.com/Welpyes/Proot-distro-Arch-Linux/blob/a329f2be169ed71e6e812f926df9d911310c5c81/.Readme-Resources/termux-repos2.jpg">
+
+</details>
