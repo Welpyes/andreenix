@@ -31,12 +31,12 @@
 - Keep Screen On - On
 
 ### Pointer
-Touchscreen input mode  - Trackpad  
-Show stylus click options  - Off
-Show mouse click helper overlay  - On
-Capture external mouse when possible  - On
-Transform captured pointer movements  - On  
-Enable tap-to-move for touchpads - Off
+- Touchscreen input mode  - Trackpad  
+- Show stylus click options  - Off
+- Show mouse click helper overlay  - On
+- Capture external mouse when possible  - On
+- Transform captured pointer movements  - On  
+- Enable tap-to-move for touchpads - Off
 
 ### Keyboard
 Toggle Keyboard using back key - On
