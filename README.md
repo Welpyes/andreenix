@@ -60,13 +60,13 @@ termux-change-repo && pkg upgrade -y
 Installing additional repos
 
 ```sh
-pkg install root-repo x11-repo tur-repo
+pkg install root-repo x11-repo tur-repo -y
 ```
 <br>
 Install proot-distro and necessary packages
 
 ```sh
-pkg install termux-x11-nightly pulseaudio proot-distro wget
+pkg install termux-x11-nightly pulseaudio proot-distro wget -y
 ```
 now thats finished lets move on to **Arch Setup**
 
@@ -125,7 +125,7 @@ pacman -Syyyyyyyyyyu
 ```
 install sudo and xfce4 
 ```bash
-pacman -S sudo xfce4
+pacman -S sudo xfce4 --noconfirm
 ```
 add user (add your username)
 ```bash
