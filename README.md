@@ -57,7 +57,6 @@ termux-change-repo && pkg upgrade -y
 
 
 <br> 
-###
 Installing additional repos
 
 ```sh
