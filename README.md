@@ -82,7 +82,7 @@ First of all we have to enable mirrors based on your region to achieve fast down
 ```bash
 nano /etc/pacman.d/mirrorlist
 ```
-After executing that command, disable the Geo-ip server by adding a comment (#) in front of `server` entry
+After executing that command, disable the Geo-ip server by adding a comment (#) in front of `server` entry <br>
 example: **DONT COPY THIS**
 ```bash
 ## Geo-IP based mirror selection and load balancing
@@ -90,3 +90,11 @@ example: **DONT COPY THIS**
 /\
  L add this # 
 ```
+after that just remove the comment on the servers you want based on your region
+```bash
+### Japan
+## Tokyo
+ Server = http://jp.mirror.archlinuxarm.org/$arch/$repo
+ /\
+  L remove the # here
+ ```
