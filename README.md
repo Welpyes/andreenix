@@ -129,7 +129,7 @@ pacman -S sudo xfce4 --noconfirm
 ```
 add user (add your username) **NOTE** dont forget that your username is case sensitive 
 ```bash
-useradd -m -G wheel Welpyes
+useradd -m -G wheel {Username}
 ```
 Add a password to your user
 ```bash
@@ -141,7 +141,7 @@ nano /etc/sudoers
 ```
 now scroll down and find `User Privilege Specification` one line under `root` add:
 ```bash
-Welpyes ALL=(ALL) ALL
+{Username} ALL=(ALL) ALL
 ```
 then save the file<br>
 <br>
