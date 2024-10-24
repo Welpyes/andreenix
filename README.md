@@ -135,9 +135,40 @@ Add a password to your user
 ```bash
 passwd Welpyes
 ```
+open the sudoers file using this command 
+```bash
+nano /etc/sudoers
+```
 now scroll down and find `User Privilege Specification` one line under `root` add:
 ```bash
 Welpyes ALL=(ALL) ALL
+```
+then save the file<br>
+<br>
+now we're gonna select your timezone using
+```bash
+tzselect
+```
+Choose your region and country and copy the `export` command it outputs<br>
+eg. `export tz={timezone}` then execute it to save
+
+exit archlinux by typing `exit` to return to termux
+
+### Launching Archlinux
+inside termux 
+import the script using 
+```bash
+wget https://raw.githubusercontent.com/Welpyes/dotfiles-resource/refs/heads/main/startxfce4_arch.sh
+```
+Now if you changed the username open the script by using nano
+```bash
+nano startxfce4_arch.sh
+```
+and in line 25 change `Welpyes` to your username of choice<br>
+
+now to launch arch linux just use this command
+```bash
+bash startxfce4_arch.sh
 ```
 
 
