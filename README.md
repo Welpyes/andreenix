@@ -1,7 +1,7 @@
 # Proot distro Arch Linux install
 <br><img width="300-" align="center" src="https://github.com/Welpyes/dotfiles-windows/blob/18d130b89831024092f5a6c05cc556dd70efd60f/wallpapers/20241018_195232.png">
 
-## Prerequisites
+## Applications Download
 
 - **Termux**: A terminal emulator for Android that allows you to run Linux commands on your device.  
   [![Download Termux](https://img.shields.io/badge/Download-Termux-brightgreen?style=for-the-badge&logo=android)](https://f-droid.org/repo/com.termux_118.apk) - click to download
