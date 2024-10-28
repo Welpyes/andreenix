@@ -153,7 +153,12 @@ now we're gonna select your timezone using
 tzselect
 ```
 Choose your region and country and copy the `export` command it outputs<br>
-eg. `export tz={timezone}` then execute it to save
+eg. `export tz={timezone}` then put it to your `.profile`<br>
+alternatively you can execute 
+```
+ln -sf /usr/share/zoneinfo/<SELECTED_ZONE> /etc/localtime
+```
+
 
 exit archlinux by typing `exit` to return to termux
 
