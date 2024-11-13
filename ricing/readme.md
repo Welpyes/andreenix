@@ -16,7 +16,7 @@ if possible move the directories one by one in the home folder to avoid breakage
 <br>
 now install the packages
 ```
-sudo pacman -S feh polybar rofi zsh starship kitty geany neofetch gtk-engine-murrine --noconfirm
+sudo pacman -S feh polybar rofi zsh starship kitty geany neofetch gtk-murrine-engine sassc --noconfirm
 ```
 **OPTIONAL**<br>
 install cava using your aur helper
@@ -29,11 +29,11 @@ git clone https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme
 ```
 cd to the repo
 ```
-cd Gruvbox-GTK-Theme
+cd Gruvbox-GTK-Theme/themes
 ```
 now install it 
 ```
-./install.sh -t all -c all -s compact --tweaks medium black float outline
+./install.sh -t all -s compact --tweaks medium black float outline
 ```
 to remove your existing xfce panels what ever way you want<br>
 now go to `~/.config/openbox/styles` then run `gruvbox.sh`
