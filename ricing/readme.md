@@ -35,6 +35,8 @@ now install it
 ```
 ./install.sh -t all -c all -s compact --tweaks medium black float outline
 ```
+to remove your existing xfce panels what ever way you want<br>
+now go to `~/.config/openbox/styles` then run `gruvbox.sh`
 
 
 
