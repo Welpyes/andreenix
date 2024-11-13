@@ -16,7 +16,7 @@ if possible move the directories one by one in the home folder to avoid breakage
 <br>
 now install the packages
 ```
-sudo pacman -S feh polybar rofi zsh starship kitty geany neofetch gtk-murrine-engine sassc --noconfirm
+sudo pacman -S feh polybar rofi zsh starship kitty geany neofetch gtk-murrine-engine sassc xmlstarlet --noconfirm
 ```
 **OPTIONAL**<br>
 install cava using your aur helper
