@@ -1,6 +1,6 @@
 # Gruvbox Rice Xfce4
 
-[image here]
+<br><img width="800-" align="center" src="https://github.com/Welpyes/Proot-distro-Arch-Linux/blob/main/.Readme-Resources/Screenshot_2024-11-12_22-16-19.png">
 
 <details>
 <summary><h3>Install Instructions</h3></summary>
