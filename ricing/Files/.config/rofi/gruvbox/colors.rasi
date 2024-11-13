@@ -1,0 +1,14 @@
+/* Color-Scheme */
+
+* {
+    BG:    #181614ff;
+    BGA:   #211E1Aff;
+    FG:    #FBF1C7ff;
+    BDR:   #76A49Aff;
+    SEL:   #FBF1C7ff;
+    UGT:   #EC407Aff;
+	IMG:   #EC407Aff;
+	ON:    #61C766ff;
+	OFF:   #EC7875ff;
+}
+
