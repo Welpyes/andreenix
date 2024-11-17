@@ -1,14 +1,17 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
+# Repo confirmation
 termux-change-repo
-
 clear
 
 # Prompt the user to enter their username
 echo "NOTE: The script will ask for your username again later in the install"
 read -p "Please enter your username: " username
+echo "Initiating install script..."
+sleep 5
 
-# Add an extra space to the username
+
+# Username variable
 username="$username "
 
 # Define the file where you want to place the username
@@ -48,6 +51,7 @@ awk -v username="$username" '{
     }
 }' "$file" > "$tmpfile" && mv "$tmpfile" "$file"
 
+# Fedora Auto setup
 proot-distro login fedora --shared-tmp -- /bin/bash -c 'dnf upgrade -y && dnf update -y && dnf install wget -y && exit'
 
 sleep 3
