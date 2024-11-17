@@ -1,5 +1,9 @@
 #!/data/data/com.termux/files/usr/bin/bash
+
+termux-change-repo
+
 clear
+
 # Prompt the user to enter their username
 echo "NOTE: The script will ask for your username again later in the install"
 read -p "Please enter your username: " username
