@@ -52,7 +52,7 @@ awk -v username="$username" '{
 }' "$file" > "$tmpfile" && mv "$tmpfile" "$file"
 
 # Fedora Auto setup
-proot-distro login fedora --shared-tmp -- /bin/bash -c 'dnf upgrade -y && dnf update -y && dnf install wget -y && exit'
+proot-distro login fedora --shared-tmp -- /bin/bash -c 'dnf upgrade -y && dnf update -y && exit'
 
 sleep 3
 clear
