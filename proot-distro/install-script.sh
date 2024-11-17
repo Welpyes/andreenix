@@ -22,7 +22,7 @@ read -p "Do you want to install fedora and necessary packages? (y/n): " install_
 
 if [ "$install_packages" = "y" ]; then
     # List of packages to be installed
-    packages="proot-distro pulseaudio termux-x11-nightly"  # Replace with your actual packages
+    packages="proot-distro pulseaudio termux-x11-nightly"  
 
     # Install the packages
     pkg install root-repo x11-repo -y
