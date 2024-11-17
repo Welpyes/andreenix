@@ -15,12 +15,12 @@ read -p "Do you want to install fedora and necessary packages? (y/n): " install_
 
 if [ "$install_packages" = "y" ]; then
     # List of packages to be installed
-    packages="proot-distro pulseaudio wget termux-x11-nightly"  # Replace with your actual packages
+    packages="proot-distro pulseaudio termux-x11-nightly"  # Replace with your actual packages
 
     # Install the packages
     pkg install root-repo x11-repo -y
     pkg upgrade -y
-    pkg install ${packages} -y && wget https://raw.githubusercontent.com/Welpyes/Proot-distro-Arch-Linux/refs/heads/main/proot-distro/fedora.sh
+    pkg install ${packages} -y && curl -o fedora.sh https://raw.githubusercontent.com/Welpyes/Proot-distro-install-Guide/refs/heads/main/proot-distro/fedora.sh
     pd i fedora
 
     echo "Packages have been installed."
