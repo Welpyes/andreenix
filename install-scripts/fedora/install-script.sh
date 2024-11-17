@@ -27,7 +27,7 @@ if [ "$install_packages" = "y" ]; then
     # Install the packages
     pkg install root-repo x11-repo -y
     pkg upgrade -y
-    pkg install ${packages} -y && curl -o fedora.sh https://raw.githubusercontent.com/Welpyes/Proot-distro-install-Guide/refs/heads/main/proot-distro/fedora.sh
+    pkg install ${packages} -y && curl -o fedora.sh https://raw.githubusercontent.com/Welpyes/Proot-distro-install-Guide/refs/heads/main/install-scripts/fedora/fedora.sh
     pd i fedora
 
     echo "Packages have been installed."
