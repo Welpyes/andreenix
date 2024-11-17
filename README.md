@@ -18,3 +18,10 @@ If You're getting `"[Process completed (signal 9) - press Enter]"` Termux error 
 # 
 ### installation
 choose distro you want
+| Fedora |  arch  |
+|--------|--------|
+|  link  |  link  |
+
+
+
+
