@@ -20,7 +20,7 @@ If You're getting `"[Process completed (signal 9) - press Enter]"` Termux error 
 choose distro you want
 | Fedora |  arch  |
 |--------|--------|
-|  link  |  link  |
+|  [link](https://github.com/Welpyes/Proot-distro-install-Guide/tree/main/install-scripts/fedora)  |  link  |
 
 
 
