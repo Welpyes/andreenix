@@ -4,5 +4,5 @@ this will ask for your username twice, one for the installation one for fedora u
 **Note**: PLEASE USE THE SAME USERNAME<br>
 just follow what is in your screen its pretty straight forward 
 ```
-wget -o install-script.sh https://raw.githubusercontent.com/Welpyes/Proot-distro-install-Guide/refs/heads/main/install-scripts/fedora/install-script.sh && bash install-script.sh
+curl -o install-script.sh https://raw.githubusercontent.com/Welpyes/Proot-distro-install-Guide/refs/heads/main/install-scripts/fedora/install-script.sh && bash install-script.sh
 ```
