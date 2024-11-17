@@ -64,4 +64,4 @@ proot-distro login fedora --shared-tmp -- /bin/bash -c 'dnf install xfce4-sessio
 proot-distro login fedora --shared-tmp -- /bin/bash -c 'rpm -e xfce-polkit --nodeps'
 
 
-echo "Fedora linux has been installed to launch type 'bash fedora.sh'
+echo "Fedora linux has been installed to launch type 'bash fedora.sh'"
