@@ -59,7 +59,9 @@ clear
 
 proot-distro login fedora --shared-tmp -- /bin/bash -c 'curl -o account-creation.sh https://raw.githubusercontent.com/Welpyes/Proot-distro-install-Guide/refs/heads/main/proot-distro/account-creation.sh && bash account-creation.sh && exit'
 
-proot-distro login fedora --shared-tmp -- /bin/bash -c 'dnf install xfce4-session xfce4-panel xfce4-settings xfwm4 xfce4-taskmanager xfce4-screenshooter xfce4-dict dunst xfce4-notifyd xfce4-clipman-plugin xfce4-weather-plugin xfce4-sensors-plugin feh ImageMagick rhythmbox firefox zsh polybar cava kitty geany leafpad fastfetch -y && exit'
+proot-distro login fedora --shared-tmp -- /bin/bash -c 'dnf install xfce4-session xfce4-panel xfce4-settings xfwm4 xfce4-taskmanager xfce4-screenshooter xfce4-dict dunst xfce4-notifyd xfce4-clipman-plugin xfce4-weather-plugin xfce4-sensors-plugin feh ImageMagick rhythmbox firefox zsh polybar cava kitty geany leafpad fastfetch thulnar -y && exit'
+
+proot-distro login fedora --shared-tmp -- /bin/bash -c 'rpm -e xfce-polkit --nodeps'
 
 
 echo "Fedora linux has been installed to launch type 'bash fedora.sh' "
