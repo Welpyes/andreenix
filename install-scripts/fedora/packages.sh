@@ -26,7 +26,7 @@ packages="$packages"
 
 # package listing
 if [ "$packages" = "" ]; then
-    packages="xfce4-session xfce4-panel xfce4-settings xfwm4 xfce4-taskmanager xfce4-screenshooter xfce4-dict dunst xfce4-notifyd xfce4-clipman-plugin xfce4-weather-plugin xfce4-sensors-plugin feh ImageMagick rhythmbox firefox zsh polybar cava kitty geany leafpad fastfetch xfdesktop viewnior thunar"
+    packages="xfce4-session xfce4-panel xfce4-settings xfwm4 xfce4-taskmanager xfce4-screenshooter xfce4-dict dunst xfce4-notifyd xfce4-clipman-plugin xfce4-weather-plugin xfce4-sensors-plugin feh ImageMagick rhythmbox firefox zsh polybar thunar-volman cava kitty geany leafpad fastfetch xfdesktop viewnior thunar"
     
     echo "installing $packages"
 else 
