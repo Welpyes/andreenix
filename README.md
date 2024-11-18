@@ -23,5 +23,7 @@ choose distro you want
 |  [link](https://github.com/Welpyes/Proot-distro-install-Guide/tree/main/install-scripts/fedora)  |  link  |
 
 
-
-
+set timezone 
+```
+ln -sf /usr/share/zoneinfo/<SELECTED_ZONE> /etc/localtime
+```
