@@ -6,3 +6,8 @@ just follow what is in your screen its pretty straight forward
 ```
 curl -o install-script.sh https://raw.githubusercontent.com/Welpyes/Proot-distro-install-Guide/refs/heads/main/install-scripts/fedora/install-script.sh && bash install-script.sh
 ```
+
+# Rice
+
+heres my rice of it if u wanna see
+https://github.com/Welpyes/Fedora-xfce-rice
