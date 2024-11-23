@@ -10,7 +10,7 @@ curl -o ~/.config/i3/config https://raw.githubusercontent.com/Welpyes/Proot-dist
 mkdir -p ~/.autostarts
 
 # Create the script file named innitrc inside ~/.autostarts
-SCRIPT_PATH="$HOME/.autostarts/innitrc"
+SCRIPT_PATH="~/.autostarts/innitrc"
 
 # Make innitrc script
 cat << 'EOF' > "$SCRIPT_PATH"
@@ -52,7 +52,7 @@ Comment=Start Innitrc at login
 EOF
 
 # Create the i3-startup.sh file inside ~/.autostarts
-STARTUP_SCRIPT="$HOME/.autostarts/i3-startup.sh"
+STARTUP_SCRIPT="~/.autostarts/i3-startup.sh"
 
 # Write the desired content into the i3-startup.sh file
 cat << 'EOF' > "$STARTUP_SCRIPT"
