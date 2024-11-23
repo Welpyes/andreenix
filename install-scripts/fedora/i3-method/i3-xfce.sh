@@ -18,6 +18,15 @@ if [ "$username" == "none" ]; then
 else
     # Log in as the specified user
     echo "Logging in as $username..."
+    # package installation
+    sudo dnf upgrade -S
+    sudo dnf install -y xfce4-session xfce4-panel xfce4-settings xfce4-taskmanager xfce4-screenshooter xfce4-dict xfce4-notifyd feh ImageMagick rhythmbox zsh thunar-volman cava kitty neovim fastfetch viewnior thunar libX11-devel libXcomposite-devel libXdamage-devel libXfixes-devel libXrender-devel make gcc git i3
+    sudo rpm -e --nodeps xfce-polkit xfwm4 
+    # compile and install fastcompmgr
+    git clone https://github.com/tycho-kirchner/fastcompmgr
+    cd fastcompmgr
+    make
+    make install
     su "$username" -c "cd ~ && curl -o main-install.sh https://raw.githubusercontent.com/Welpyes/Proot-distro-install-Guide/refs/heads/main/install-scripts/fedora/i3-method/main-install.sh && bash main-install.sh"
 fi
 
