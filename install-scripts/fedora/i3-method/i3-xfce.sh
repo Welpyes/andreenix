@@ -14,7 +14,7 @@ if [ "$username" == "none" ]; then
     # Insert your custom commands here
     curl -o account-creation.sh https://raw.githubusercontent.com/Welpyes/Proot-distro-install-Guide/refs/heads/main/install-scripts/fedora/account-creation.sh
     bash account-creation.sh
-    bash i3-setup.sh
+    bash i3-xfce.sh
 else
     # Log in as the specified user
     echo "Logging in as $username..."
