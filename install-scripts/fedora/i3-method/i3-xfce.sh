@@ -18,6 +18,6 @@ if [ "$username" == "none" ]; then
 else
     # Log in as the specified user
     echo "Logging in as $username..."
-    su "$username" -c "cd ~ &&
+    su "$username" -c "cd ~ && curl -o main-install.sh https://raw.githubusercontent.com/Welpyes/Proot-distro-install-Guide/refs/heads/main/install-scripts/fedora/i3-method/main-install.sh && bash main-install.sh"
 fi
 
