@@ -2,26 +2,6 @@
 
 cd ~
 
-# package installation
-echo "Installing packages"
-sudo dnf upgrade -S
-sudo dnf install -y xfce4-session xfce4-panel xfce4-settings xfce4-taskmanager xfce4-screenshooter xfce4-dict xfce4-notifyd feh ImageMagick rhythmbox zsh thunar-volman cava kitty neovim fastfetch viewnior thunar libX11-devel libXcomposite-devel libXdamage-devel libXfixes-devel libXrender-devel make gcc git i3
-
-sudo rpm -e --nodeps xfce-polkit xfwm4 
-
-# import basic i3 config
-mkdir -p ~/.config/i3
-curl -o ~/.config/i3/config https://raw.githubusercontent.com/Welpyes/Proot-distro-install-Guide/refs/heads/main/install-scripts/fedora/i3-method/config
-
-# compile and install fastcompmgr
-git clone https://github.com/tycho-kirchner/fastcompmgr
-cd fastcompmgr
-make
-make install
-
-
-cd ~
-
 
 # Create the ~/.autostarts directory if it doesn't exist
 mkdir -p ~/.autostarts
