@@ -23,7 +23,7 @@ SCRIPT_DIR="~/.autostarts"
 for script in "$SCRIPT_DIR"/*.sh; do
     if [ -x "$script" ]; then
         echo "Executing $script"
-        "$script"
+        "bash $script"
     else
         echo "$script is not executable. Skipping."
     fi
