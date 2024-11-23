@@ -2,6 +2,9 @@
 
 cd ~
 
+# import basic i3 config
+mkdir -p ~/.config/i3
+curl -o ~/.config/i3/config https://raw.githubusercontent.com/Welpyes/Proot-distro-install-Guide/refs/heads/main/install-scripts/fedora/i3-method/config
 
 # Create the ~/.autostarts directory if it doesn't exist
 mkdir -p ~/.autostarts
