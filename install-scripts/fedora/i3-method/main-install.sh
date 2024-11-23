@@ -4,7 +4,7 @@ cd ~
 
 # package installation
 echo "Installing packages"
-sudo dnf upgrade
+sudo dnf upgrade -S
 sudo dnf install -y xfce4-session xfce4-panel xfce4-settings xfce4-taskmanager xfce4-screenshooter xfce4-dict xfce4-notifyd feh ImageMagick rhythmbox zsh thunar-volman cava kitty neovim fastfetch viewnior thunar libX11-devel libXcomposite-devel libXdamage-devel libXfixes-devel libXrender-devel make gcc git i3
 
 sudo rpm -e --nodeps xfce-polkit xfwm4 
