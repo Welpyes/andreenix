@@ -18,6 +18,6 @@ if [ "$username" == "none" ]; then
 else
     # Log in as the specified user
     echo "Logging in as $username..."
-    su "$username" -c 
+    su "$username" -c "cd ~ &&
 fi
 
