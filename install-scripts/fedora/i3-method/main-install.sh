@@ -43,7 +43,7 @@ DESKTOP_FILE="$HOME/.config/autostart/innitrc.desktop"
 cat << 'EOF' > "$DESKTOP_FILE"
 [Desktop Entry]
 Type=Application
-Exec=bash ~/.autostarts/innitrc
+Exec=bash $HOME/.autostarts/innitrc
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
