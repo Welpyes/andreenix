@@ -17,13 +17,13 @@ cat << 'EOF' > "$SCRIPT_PATH"
 #!/bin/bash
 
 # Directory containing .sh scripts
-SCRIPT_DIR="~/.autostarts"
+SCRIPT_DIR="$HOME/.autostarts"
 
 # Loop through all .sh files in the directory and execute them
 for script in "$SCRIPT_DIR"/*.sh; do
     if [ -x "$script" ]; then
         echo "Executing $script"
-        ./"$script"
+        "$script"
     else
         echo "$script is not executable. Skipping."
     fi
