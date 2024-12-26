@@ -5,7 +5,7 @@
   [![Download Termux](https://img.shields.io/badge/Download-Termux-brightgreen?style=for-the-badge&logo=android)](https://github.com/termux/termux-app/releases/) - click to download
 
 - **Termux-X11 (Xserver)**: Required for running graphical applications within Termux, providing a graphical user interface.  
-  [![Download Termux-X11](https://img.shields.io/badge/Download-Termux--X11-blue?style=for-the-badge&logo=linux)](https://github.com/ahmad1abbadi/extra/releases/download/apps/termux-x11.apk) - click to download
+  [![Download Termux-X11](https://img.shields.io/badge/Download-Termux--X11-blue?style=for-the-badge&logo=linux)](https://github.com/termux/termux-x11/releases/tag/nightly) - click to download
   
 ### Note For Android 12 and above
 If You're getting `"[Process completed (signal 9) - press Enter]"` Termux error see this [github repo](https://github.com/agnostic-apollo/Android-Docs/blob/master/en/docs/apps/processes/phantom-cached-and-empty-processes.md#commands-to-disable-phantom-process-killing-and-tldr) and [reddit post](https://www.reddit.com/r/termux/comments/w0ixkp/comment/ighshu6/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button)
