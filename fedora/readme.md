@@ -45,4 +45,4 @@ now put this command to set up fedora and install the packages you want
 ```shell
 bash <(curl -fsSL https://raw.githubusercontent.com/Welpyes/andreenix/refs/heads/main/fedora/fedora-package.sh)
 ```
-
+this script will ask for your username and password again. just put the same ones you wrote earlier
