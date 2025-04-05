@@ -1,5 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
+termux-change-repo 
+pkg upgrade -y
+pkg update -y
 # 1. Install dependencies
 pkg install root-repo tur-repo x11-repo
 pkg install ncurses-utils pulseaudio termux-x11-nightly proot-distro -y
