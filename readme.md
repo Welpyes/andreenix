@@ -19,7 +19,7 @@ If you want to install this on a configured Termux system please back up your ho
 1. installs necessary packages .
 2. Helps you setup launch scripts and accounts
 3. Installs a (pseudo) Bootloader and Display Manager
-4. gives you freedom while also guiding you on the installation
+4. Guides you on installing a desktop environment while also giving you freedom to pick one yourself
 
 ### Applications Download
 
