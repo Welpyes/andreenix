@@ -1,4 +1,4 @@
-# ANDREENIX
+# ANDREENIX | Linux on Termux
 <div align=center>
   <img src="./logo.png" width="300"></img>
 </div>
