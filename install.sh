@@ -15,6 +15,7 @@ curl -L "https://raw.githubusercontent.com/Welpyes/Termux-Pseudo-Bootloader/refs
 chmod +x $HOME/.config/bootloader/boot
 
 # 6. Request user input
+clear
 echo "Please provide the following information:"
 read -p "Username: " username
 read -s -p "Password: " password
@@ -78,5 +79,5 @@ echo "Uninstallation complete!"
 EOF
 chmod +x $HOME/uninstall.sh
 
-echo "Installation complete! Please replace the placeholder URLs with actual GitHub links."
+echo "Installation complete!"
 echo "To uninstall, run: bash $HOME/uninstall.sh"
