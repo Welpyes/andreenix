@@ -36,6 +36,12 @@ pwd = $password
 cmd = am start --user 0 -n com.termux.x11/com.termux.x11.MainActivity > /dev/null 2>&1
 EOF
 
+cat > $HOME/.bashrc << EOF
+clear
+
+env bootloader
+EOF
+
 # 4. Create bootloader.ini
 cat > $HOME/.config/bootloader/bootloader.ini << EOF
 [selection_title]
