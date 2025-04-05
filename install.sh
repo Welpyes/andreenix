@@ -1,7 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 # 1. Install dependencies
-pkg install ncurses-utils -y
+pkg install root-repo tur-repo x11-repo
+pkg install ncurses-utils pulseaudio termux-x11-nightly proot-distro -y
 
 # 2. Download binaries and set them up
 curl -L "https://github.com/Welpyes/Termux-Pseudo-DM/releases/download/release/dm" -o /data/data/com.termux/files/usr/bin/dm
@@ -16,6 +17,7 @@ chmod +x $HOME/.config/bootloader/boot
 
 # 6. Request user input
 clear
+echo "This script only supports/tested on Fedora and Arch Linux Proot-distro"
 echo "Please provide the following information:"
 read -p "Username: " username
 read -s -p "Password: " password
