@@ -3,35 +3,34 @@
 termux-change-repo 
 pkg upgrade -y
 pkg update -y
-# 1. Install dependencies
 pkg install root-repo tur-repo x11-repo
 pkg install ncurses-utils pulseaudio termux-x11-nightly proot-distro -y
 
-# 2. Download binaries and set them up
 curl -L "https://github.com/Welpyes/Termux-Pseudo-DM/releases/download/release/dm" -o /data/data/com.termux/files/usr/bin/dm
 curl -L "https://github.com/Welpyes/Termux-Pseudo-Bootloader/releases/download/Release/bootloader" -o /data/data/com.termux/files/usr/bin/bootloader
 chmod +x /data/data/com.termux/files/usr/bin/dm
 chmod +x /data/data/com.termux/files/usr/bin/bootloader
 
-# Create config directory and download boot file
 mkdir -p $HOME/.config/bootloader
 curl -L "https://raw.githubusercontent.com/Welpyes/Termux-Pseudo-Bootloader/refs/heads/main/boot" -o $HOME/.config/bootloader/boot
 chmod +x $HOME/.config/bootloader/boot
 
-# 6. Request user input
 clear
 echo "This script only supports/tested on Fedora and Arch Linux Proot-distro"
 echo "Please provide the following information:"
 read -p "Username: " username
 read -s -p "Password: " password
 echo ""
-read -p "Distro title: " distro_title
-read -p "Distro proot name: " distro_proot
+echo "distro you want to install(recommended: Archlinux, Fedora)"
+read -p "Proot-Distro : " distro_proot
 echo ""
-echo "startxfce4, bspwm, i3, etc etc"
+echo "Distro display name(e.g: $username's fedora)"
+read -p "Distro title: " distro_title
+echo ""
+echo "startxfce4, bspwm, i3. (Put `startxfce4` if you're following the guide)"
 read -p "Window manager launch command: " window_manager
 
-# 3. Create .dmrc file
+# .dmrc file
 cat > $HOME/.dmrc << EOF
 username = $username
 pwd = $password
@@ -44,7 +43,7 @@ clear
 env bootloader
 EOF
 
-# 4. Create bootloader.ini
+# Create bootloader.ini
 cat > $HOME/.config/bootloader/bootloader.ini << EOF
 [selection_title]
 distro = $distro_title (aarch64)
@@ -57,7 +56,7 @@ root = pd sh $distro_proot
 exit = bash -c 'pkill -f termux'
 EOF
 
-# 5 & 7. Create proot file with user inputs
+# Create proot file with user inputs
 cat > $HOME/.config/bootloader/proot << EOF
 #!/data/data/com.termux/files/usr/bin/bash
 
@@ -82,7 +81,7 @@ chmod +x $HOME/.config/bootloader/proot
 pd i $distro_proot
 
 
-# 8. Create uninstall script
+# uninstall script
 cat > $HOME/uninstall.sh << EOF
 #!/data/data/com.termux/files/usr/bin/bash
 rm -f /data/data/com.termux/files/usr/bin/dm
@@ -95,5 +94,9 @@ echo "Uninstallation complete!"
 EOF
 chmod +x $HOME/uninstall.sh
 
-echo "Installation complete!"
+echo "Bootloader, Display Manager and $distro_proot Installation complete!"
+echo ""
+echo "If you're following the Install Guide please go back to the guide to get the distro installation script"
 echo "To uninstall, run: bash $HOME/uninstall.sh"
+
+pd sh $distro_proot
