@@ -68,6 +68,8 @@ proot-distro login $distro_proot --shared-tmp -- /bin/bash -c 'export PULSE_SERV
 exit 0
 EOF
 chmod +x $HOME/.config/bootloader/proot
+pkg i $distro_proot -y
+
 
 # 8. Create uninstall script
 cat > $HOME/uninstall.sh << EOF
