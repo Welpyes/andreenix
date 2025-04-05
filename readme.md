@@ -1,4 +1,4 @@
-# ANDREENIX | Linux on Android 
+# ANDREENIX
 <div align=center>
   <img src="./logo.png" width="300"></img>
 </div>
