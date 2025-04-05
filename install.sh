@@ -33,8 +33,8 @@ EOF
 # 4. Create bootloader.ini
 cat > $HOME/.config/bootloader/bootloader.ini << EOF
 [selection_title]
-distro = $distro_title
-root = root shell (fallback)
+distro = $distro_title (aarch64)
+root = $distro_proot root shell (fallback)
 exit = Turn Off Computer
 
 [selection_cmd]
