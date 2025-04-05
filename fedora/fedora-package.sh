@@ -38,7 +38,7 @@ packages="$packages"
 
 # package listing
 if [ "$packages" = "" ]; then
-    packages="xfce4-session xfce4-panel xfce4-settings xfwm4 xfce4-taskmanager xfce4-screenshooter xfce4-dict xfce4-notifyd xfce4-clipman-plugin xfce4-weather-plugin xfce4-sensors-plugin feh ImageMagick rhythmbox firefox xfce4-terminal leafpad fastfetch xfdesktop viewnior pcmanfm"
+    packages="xfce4-session xfce4-panel xfce4-settings xfwm4 xfce4-taskmanager xfce4-screenshooter xfce4-dict xfce4-notifyd xfce4-clipman-plugin xfce4-weather-plugin xfce4-sensors-plugin feh ImageMagick rhythmbox firefox xfce4-terminal leafpad fastfetch xfdesktop viewnior"
     
     echo "installing $packages"
 else 
@@ -52,6 +52,7 @@ dnf install $packages -y
 rpm -e --nodeps xfce-polkit
 
 # dnf install xfce4-session xfce4-panel xfce4-settings xfwm4 xfce4-taskmanager xfce4-screenshooter xfce4-dict xfce4-notifyd xfce4-clipman-plugin xfce4-weather-plugin xfce4-sensors-plugin feh ImageMagick rhythmbox firefox zsh cava kitty geany leafpad fastfetch xfdesktop viewnior pcmanfm  -y
-
+echo -e "${LGreen} You can now exit termux by closing it or using this command: ${NC}"
+echo "pkill -f termux"
 
 exit 0
