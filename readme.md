@@ -5,13 +5,14 @@ Andreenix is a pretty straightforward installer/script for a non-native proot ba
 
 This script will guide you with installations of different distros and desktop environments
 
-<br>
-**Note**<br>
-It is recommended to use a fresh Termux install and not a configured one as this may mess up your setup.<br>
-<br>
-If you want to install this on a configured Termux system please back up your home folder and important files inside termux just in case things break
+---
 
-**What does this script do?**
+**Note**
+<br>
+It is recommended to use a fresh Termux install and not a configured one as this may mess up your setup.<br><br>
+If you want to install this on a configured Termux system please back up your home folder and important files inside termux just in case things break<br>
+
+**What does this script do?** 
 1. installs necessary packages .
 2. Helps you setup launch scripts and accounts
 3. Installs a (pseudo) Bootloader and Display Manager
