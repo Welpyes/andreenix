@@ -96,7 +96,7 @@ chmod +x $HOME/uninstall.sh
 
 echo "Bootloader, Display Manager and $distro_proot Installation complete!"
 echo ""
-echo "If you're following the Install Guide please go back to the guide to get the distro installation script"
+echo "If you're following the Install Guide please go back to the guide to get the distro setup script"
 echo "To uninstall, run: bash $HOME/uninstall.sh"
 
 pd sh $distro_proot
