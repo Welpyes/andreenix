@@ -77,6 +77,7 @@ rm -f /data/data/com.termux/files/usr/bin/bootloader
 rm -rf $HOME/.config/bootloader
 rm -f $HOME/.dmrc
 rm -f $HOME/uninstall.sh
+pkg remove proot-distro termux-x11-nightly
 echo "Uninstallation complete!"
 EOF
 chmod +x $HOME/uninstall.sh
