@@ -41,7 +41,7 @@ then put your country in this command(e.g: `/usr/share/zoneinfo/Asia/Manila`)
 ln -sf /usr/share/zoneinfo/<SELECTED_ZONE> /etc/localtime
 ```
 
-now put this command to set up fedora and install the packages you want
+now execute this command to set up fedora and install the packages you want
 ```shell
 bash <(curl -fsSL https://raw.githubusercontent.com/Welpyes/andreenix/refs/heads/main/fedora/fedora-package.sh)
 ```
