@@ -49,8 +49,3 @@ For Hardware Acceleration installation and instructions please visit this reposi
 
 [LinuxDroidMaster/Hardware-Acceleration.md](https://github.com/LinuxDroidMaster/Termux-Desktops/blob/main/Documentation/HardwareAcceleration.md)
 
-
-set timezone 
-```
-ln -sf /usr/share/zoneinfo/<SELECTED_ZONE> /etc/localtime
-```
