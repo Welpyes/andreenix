@@ -44,6 +44,11 @@ choose distro you want
 |--------|--------|
 |  [link](./fedora/readme.md) |  [link](./Archlinux/readme.md) |
 
+#### Hardware Acceleration
+For Hardware Acceleration installation and instructions please visit this repository<br>
+
+[LinuxDroidMaster/Hardware-Acceleration.md](https://github.com/LinuxDroidMaster/Termux-Desktops/blob/main/Documentation/HardwareAcceleration.md)
+
 
 set timezone 
 ```
