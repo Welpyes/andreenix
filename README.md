@@ -10,5 +10,5 @@ bash <(curl -fsSL https://raw.githubusercontent.com/Welpyes/Proot-distro-install
 
 packages for fedora
 ```
-bash <(curl -feSL https://raw.githubusercontent.com/Welpyes/Proot-distro-install-Guide/refs/heads/dev/packages.sh)
+bash <(curl -feSL https://raw.githubusercontent.com/Welpyes/Proot-distro-install-Guide/refs/heads/dev/fedora-package.sh)
 ```
