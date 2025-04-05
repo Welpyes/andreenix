@@ -58,7 +58,6 @@ termux-x11 :0 >/dev/null &
 
 sleep 3
 
-(sleep 1 && env dm > /dev/null 2>&1) &
 # am start --user 0 -n com.termux.x11/com.termux.x11.MainActivity > /dev/null 2>&1
 sleep 1
 
