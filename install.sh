@@ -75,7 +75,7 @@ sleep 1
 
 proot-distro login $distro_proot --shared-tmp -- /bin/bash -c 'export PULSE_SERVER=127.0.0.1 && export XDG_RUNTIME_DIR=\${TMPDIR} && su - $username -c "env DISPLAY=:0 $window_manager"'
 
-exit 0
+pkill -f termux
 EOF
 chmod +x $HOME/.config/bootloader/proot
 pd i $distro_proot
