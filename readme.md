@@ -1,4 +1,7 @@
 # ANDREENIX | Linux on Android 
+<div align=center>
+  <img src="./logo.png" width="300"></img>
+</div>
 
 ## Overview
 Andreenix is a pretty straightforward installer/script for a non-native proot based desktop solution<br>
