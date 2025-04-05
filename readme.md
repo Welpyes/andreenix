@@ -42,7 +42,7 @@ If You're getting `"[Process completed (signal 9) - press Enter]"` Termux error 
 choose distro you want
 | Fedora |  Arch Linux |
 |--------|--------|
-|  [link](./fedora/readme.md) |  [link](./Archlinux/readme.md) |
+|  <a href="/fedora/readme.md"><img src="https://cdn0.iconfinder.com/data/icons/flat-round-system/512/archlinux-512.png" alt="Arch Logo" width="100"> |  <a href="/archlinux/readme.md"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Fedora_icon_%282021%29.svg/1280px-Fedora_icon_%282021%29.svg.png" alt="Fedora Linux" width="100"></a> |
 
 #### Hardware Acceleration
 For Hardware Acceleration installation and instructions please visit this repository<br>
