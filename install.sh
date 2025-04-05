@@ -27,7 +27,9 @@ read -s -p "Password: " password
 echo ""
 read -p "Distro title: " distro_title
 read -p "Distro proot name: " distro_proot
-read -p "Window manager: " window_manager
+echo ""
+echo "startxfce4, bspwm, i3, etc etc"
+read -p "Window manager launch command: " window_manager
 
 # 3. Create .dmrc file
 cat > $HOME/.dmrc << EOF
