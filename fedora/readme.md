@@ -3,7 +3,7 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Fedora_icon_%282021%29.svg/1280px-Fedora_icon_%282021%29.svg.png" alt="Fedora Logo" width="200"> <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Xfce_logo.svg" alt="xfce logo" width="200">
 
 ### Note
-We're gonna be installing fedora with xfce4 you can definitely choose other desktop environments in fedora you just need to know about the packages you need to install<br>
+We're gonna be installing fedora with xfce4, but you can definitely choose other desktop environments in fedora, you just need to know about the packages you need to install.<br>
 
 if you want to see an example(in this case bspwm) see [this gist](https://gist.github.com/Welpyes/dab8b2199148dcaa91e50eab34274d6b)
 
@@ -32,17 +32,17 @@ it will ask you for:
 **Secondary Script** <br>
 You're gonna be logged in to fedora's root shell. <br><br>
 set up the timezone first <br><br>
-run this command to get your country's address
+run this command to get your country's address.
 ```sh
 tzselect
 ```
-then put your country in this command(e.g: `/usr/share/zoneinfo/Asia/Manila`)
+then put your country in this command(e.g: `/usr/share/zoneinfo/Asia/Manila`).
 ```shell
 ln -sf /usr/share/zoneinfo/<SELECTED_ZONE> /etc/localtime
 ```
 
-now execute this command to set up fedora and install the packages you want
+now execute this command to set up fedora and install the packages you want.
 ```shell
 bash <(curl -fsSL https://raw.githubusercontent.com/Welpyes/andreenix/refs/heads/main/fedora/fedora-package.sh)
 ```
-this script will ask for your username and password again. just put the same ones you wrote earlier
+this script will ask for your username and password again. just put the same ones you wrote earlier.
