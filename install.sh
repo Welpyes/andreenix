@@ -21,7 +21,7 @@ echo "Please provide the following information:"
 read -p "Username: " username
 read -s -p "Password: " password
 echo ""
-echo "distro you want to install(recommended: Archlinux, Fedora)"
+echo "distro you want to install(recommended: archlinux, fedora)"
 read -p "Proot-Distro : " distro_proot
 echo ""
 echo "Distro display name(e.g: $username's fedora)"
