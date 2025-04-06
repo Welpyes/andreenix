@@ -26,7 +26,7 @@ it will ask you for:
 4. Proot-distro(distro you want to install)
    - put in: `fedora` to install fedora
 5. Desktop Environment 
-   - put in: `startxfce`
+   - put in: `startxfce4`
 <br><br>
 
 **Secondary Script** <br>
