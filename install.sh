@@ -27,7 +27,7 @@ echo ""
 echo "Distro display name(e.g: $username's fedora)"
 read -p "Distro title: " distro_title
 echo ""
-echo "startxfce4, bspwm, i3. (Put `startxfce4` if you're following the guide)"
+echo "startxfce4, bspwm, i3. (Put startxfce4 if you're following the guide)"
 read -p "Window manager launch command: " window_manager
 
 # .dmrc file
