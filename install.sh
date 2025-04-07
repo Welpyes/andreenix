@@ -21,13 +21,13 @@ echo "Please provide the following information:"
 read -p "Username: " username
 read -s -p "Password: " password
 echo ""
-echo "distro you want to install(recommended: Archlinux, Fedora)"
+echo "distro you want to install(recommended: archlinux, fedora)"
 read -p "Proot-Distro : " distro_proot
 echo ""
 echo "Distro display name(e.g: $username's fedora)"
 read -p "Distro title: " distro_title
 echo ""
-echo "startxfce4, bspwm, i3. (Put `startxfce4` if you're following the guide)"
+echo "startxfce4, bspwm, i3. (Put startxfce4 if you're following the guide)"
 read -p "Window manager launch command: " window_manager
 
 # .dmrc file
@@ -75,7 +75,7 @@ sleep 1
 
 proot-distro login $distro_proot --shared-tmp -- /bin/bash -c 'export PULSE_SERVER=127.0.0.1 && export XDG_RUNTIME_DIR=\${TMPDIR} && su - $username -c "env DISPLAY=:0 $window_manager"'
 
-exit 0
+pkill -f termux
 EOF
 chmod +x $HOME/.config/bootloader/proot
 pd i $distro_proot

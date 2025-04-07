@@ -1,4 +1,4 @@
-# ANDREENIX | Linux on Android 
+# ANDREENIX | Linux on Termux
 <div align=center>
   <img src="./logo.png" width="300"></img>
 </div>
@@ -19,7 +19,7 @@ If you want to install this on a configured Termux system please back up your ho
 1. installs necessary packages .
 2. Helps you setup launch scripts and accounts
 3. Installs a (pseudo) Bootloader and Display Manager
-4. gives you freedom while also guiding you on the installation
+4. Guides you on installing a desktop environment while also giving you freedom to pick one yourself
 
 ### Applications Download
 
@@ -49,8 +49,3 @@ For Hardware Acceleration installation and instructions please visit this reposi
 
 [LinuxDroidMaster/Hardware-Acceleration.md](https://github.com/LinuxDroidMaster/Termux-Desktops/blob/main/Documentation/HardwareAcceleration.md)
 
-
-set timezone 
-```
-ln -sf /usr/share/zoneinfo/<SELECTED_ZONE> /etc/localtime
-```
