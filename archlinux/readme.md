@@ -24,7 +24,7 @@ it will ask you for:
 2. password you want
 3. Distro title(can be anything you want, i recommend just Archlinux)
 4. Proot-distro(distro you want to install)
-   - put in: `archlinux` to install fedora(dont capitalize)
+   - put in: `archlinux` to install archlinux(dont capitalize)
 5. Desktop Environment 
    - put in: `startxfce4`
 <br><br>
