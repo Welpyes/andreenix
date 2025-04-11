@@ -55,13 +55,13 @@ prompt:
 login:
     type: "main.options"
     options: 
-        label: "$(distro_title)"
+        label: "$distro_title"
         cmd: "bash $HOME/.config/bootloader/boot"
 
 fallback:
     type: "main.options"
     options: 
-        label: "$(distro_proot) Root Shell (fallback)"
+        label: "$distro_proot Root Shell (fallback)"
         cmd: "pd sh fedora"
         
 exit:
