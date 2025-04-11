@@ -4,7 +4,7 @@ termux-change-repo
 pkg upgrade -y
 pkg update -y
 pkg install root-repo tur-repo x11-repo
-pkg install ncurses-utils pulseaudio termux-x11-nightly proot-distro -y
+pkg install ncurses-utils pulseaudio termux-x11-nightly proot-distro yq -y
 
 curl -L "https://github.com/Welpyes/Termux-Pseudo-DM/releases/download/release/dm" -o /data/data/com.termux/files/usr/bin/dm
 curl -L "https://github.com/Welpyes/Termux-Pseudo-Bootloader/releases/download/Release/bootloader" -o /data/data/com.termux/files/usr/bin/bootloader
@@ -37,6 +37,7 @@ pwd = $password
 cmd = am start --user 0 -n com.termux.x11/com.termux.x11.MainActivity > /dev/null 2>&1
 EOF
 
+mv $HOME/.bashrc $HOME/.bashrc.bak
 cat > $HOME/.bashrc << EOF
 clear
 
@@ -44,16 +45,30 @@ env bootloader
 EOF
 
 # Create bootloader.ini
-cat > $HOME/.config/bootloader/bootloader.ini << EOF
-[selection_title]
-distro = $distro_title (aarch64)
-root = $distro_proot root shell (fallback)
-exit = Turn Off Computer
+cat > $HOME/.config/bootloader/bootloader.yaml << EOF
+prompt:
+    title: "Boot Menu"
+    timeout: 10 
+    bold: true
+    options: ["login", "fallback", "exit"]
 
-[selection_cmd]
-distro = bash \$HOME/.config/bootloader/boot
-root = pd sh $distro_proot
-exit = bash -c 'pkill -f termux'
+login:
+    type: "main.options"
+    options: 
+        label: "$(distro_title)"
+        cmd: "bash $HOME/.config/bootloader/boot"
+
+fallback:
+    type: "main.options"
+    options: 
+        label: "$(distro_proot) Root Shell (fallback)"
+        cmd: "pd sh fedora"
+        
+exit:
+    type: "main.options"
+    options:
+        label: "Shutdown Computer"
+        cmd: "pkill -f termux"
 EOF
 
 # Create proot file with user inputs
