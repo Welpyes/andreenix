@@ -7,7 +7,7 @@ pkg install root-repo tur-repo x11-repo
 pkg install ncurses-utils pulseaudio termux-x11-nightly proot-distro yq -y
 
 curl -L "https://github.com/Welpyes/Display-Manager/releases/download/pre-release/display_manager" -o /data/data/com.termux/files/usr/bin/display_manager
-curl -L "https://github.com/Welpyes/Termux-Pseudo-Bootloader/releases/download/Release/bootloader" -o /data/data/com.termux/files/usr/bin/bootloader
+curl -L "https://github.com/Welpyes/Termux-Pseudo-Bootloader/releases/download/0.4.2/bootloader" -o /data/data/com.termux/files/usr/bin/bootloader
 chmod +x /data/data/com.termux/files/usr/bin/display_manager
 chmod +x /data/data/com.termux/files/usr/bin/bootloader
 
