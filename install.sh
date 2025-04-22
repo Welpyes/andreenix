@@ -6,7 +6,7 @@ pkg update -y
 pkg install root-repo tur-repo x11-repo
 pkg install ncurses-utils pulseaudio termux-x11-nightly proot-distro yq -y
 
-curl -L "https://github.com/Welpyes/Display-Manager/releases/download/pre-release/display_manager" -o /data/data/com.termux/files/usr/bin/display_manager
+curl -L "https://github.com/Welpyes/Display-Manager/releases/download/Release-0.1.1/display_manager" -o /data/data/com.termux/files/usr/bin/display_manager
 curl -L "https://github.com/Welpyes/Termux-Pseudo-Bootloader/releases/download/0.4.2/bootloader" -o /data/data/com.termux/files/usr/bin/bootloader
 chmod +x /data/data/com.termux/files/usr/bin/display_manager
 chmod +x /data/data/com.termux/files/usr/bin/bootloader
@@ -32,6 +32,7 @@ read -p "Window manager launch command: " window_manager
 
 # .dmrc file
 cat > $HOME/.dmrc << EOF
+[user1]
 username = $username
 pwd = $password
 cmd = am start --user 0 -n com.termux.x11/com.termux.x11.MainActivity > /dev/null 2>&1
