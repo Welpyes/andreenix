@@ -17,8 +17,7 @@ If you want to install this on a configured Termux system please back up your ho
 
 **What does this script do?** 
 1. installs necessary packages .
-2. Helps you setup launch scripts and accounts
-3. Installs a (pseudo) Bootloader and Display Manager
+2. Helps you setup launch scripts and account
 4. Guides you on installing a desktop environment while also giving you freedom to pick one yourself
 
 ### Applications Download
